@@ -1,6 +1,7 @@
-import { readFile } from 'fs';
-
-readFile('flag.txt', (err, data) => {
-  if (err) throw err;
+fs.readFile('flag.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
   console.log(data);
 });
