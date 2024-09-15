@@ -1,3 +1,1 @@
-<iframe
-    src="flag.txt"
-</iframe>
+console.log("teste")
